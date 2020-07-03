@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="t001Form"
+			type="bachtuanhop.actionForm.T001ActionForm" />
+		<form-bean name="t002Form"
+			type="bachtuanhop.actionForm.T002ActionForm" />
+	</form-beans>
+
+	<action-mappings>
+
+		<action path="/T001" name="t001Form"
+			type="bachtuanhop.action.T001Action" scope="request"
+			input="/WEB-INF/views/T001.jsp" validate="true" >
+			<forward name="success" path="/T002.do" />
+
+		</action>
+		
+		<action path="/T002" name="t002Form"
+			type="bachtuanhop.action.T002Action" scope="request"
+			input="/WEB-INF/views/T002.jsp" validate="false" >
+			<forward name="success" path="/WEB-INF/views/T002.jsp" />
+		</action>
+		<action path="/T003" name="t002Form"
+			type="bachtuanhop.action.T002Action" scope="request"
+			input="/WEB-INF/views/T003.jsp" validate="false" >
+			<forward name="success" path="/WEB-INF/views/T002.jsp" />
+		</action>
+	
+	</action-mappings>
+
+	<message-resources
+		parameter="bachtuanhop.applicationResource.ApplicationResource" />
+
+</struts-config>

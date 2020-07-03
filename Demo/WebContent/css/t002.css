@@ -1,0 +1,183 @@
+ul.breadcrumb {
+	padding: 0px 5px;
+	list-style: none;
+}
+
+ul.breadcrumb li {
+	display: inline;
+	font-size: 15px;
+}
+
+ul.breadcrumb li+li:before {
+	padding: 5px;
+	color: black;
+	content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+}
+
+.content {
+	padding: 1px;
+	height: 565px;
+}
+
+.row {
+	width: 100%;
+	height: 58px;
+	margin: 3px;
+	margin-bottom: 3px;
+	border-bottom: 29px solid #081aedf2;
+}
+
+.txt-username {
+	float: left;
+	width: 96%;
+	margin-bottom: 15px;
+	margin-top: 1px;
+}
+
+.logout {
+	float: left;
+	width: 4%;
+	margin-bottom: 15px;
+	margin-top: 1px;
+}
+
+.div_search {
+	margin-top: 20px;
+	background-color: yellow;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 8px;
+	padding-top: 15px;
+}
+
+.lb-customer-name {
+	float: left;
+	width: 17%;
+	margin-left: 10px;
+}
+
+.txt-customer-name {
+	float: left;
+	width: 17%;
+}
+
+.n-sex {
+	float: left;
+	width: 15%;
+}
+
+.n-birthday {
+	float: left;
+	width: 38%;
+}
+
+.n-search {
+	width: 10%;
+}
+
+.btn-group {
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+}
+
+.btn-group-left {
+	float: left;
+	width: 91%;
+	margin-bottom: -2px;
+	margin-top: -3px;
+}
+
+.btn-group-right {
+	float: left;
+	width: 9%;
+	margin-bottom: -2px;
+	margin-top: -3px;
+	padding-left: 45px;
+}
+
+.btn-group-left .button {
+	background-color: #a49da2; /* Green background */
+	border: 1px solid #000; /* Green border */
+	color: black; /* White text */
+	padding: 2px 8px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+}
+
+.btn-group-right .button {
+	background-color: #a49da2; /* Green background */
+	border: 1px solid #000; /* Green border */
+	color: black; /* White text */
+	padding: 2px 8px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+}
+
+.table {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	border-bottom: 2px solid #108b26;
+	border-top: 2px solid #108b26;
+	border-left: 2px solid #108b26;
+	border-right: 2px solid #108b26;
+}
+
+.table th {
+	text-align: left;
+	background-color: #108b26;
+	height: 30px;
+	color: white;
+}
+
+.table th, .table td {
+	border: 1px solid #ddd;
+	padding: 1px;
+}
+
+.table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.table tr:hover {
+	background-color: #ddd;
+}
+
+.btn-event {
+	padding-bottom: 3px;
+	padding-top: 3px;
+	width: 100%;
+}
+.btn-group-add{
+	float: left;
+	padding-top: 3px;
+	width: 20%;
+}
+.btn-add {
+	float: left;
+	padding: 2px 24px; /* Some padding */
+	background-color: #a49da2;
+    border: 1px solid #000;
+}
+.btn-group-delete{
+	float: left;
+	padding-top: 3px;
+	width: 80%;
+}
+.btn-delete {
+	padding: 2px 8px; /* Some padding */
+	background-color: #a49da2;
+    border: 1px solid #000;
+}

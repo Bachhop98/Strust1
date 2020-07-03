@@ -1,0 +1,84 @@
+.form-login {
+	padding-top: 90px;
+	padding-right: 499px;
+	padding-bottom: 90px;
+	padding-left: 177px;
+}
+
+.form-title {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.form-name {
+	margin-bottom: 14px;
+	margin-top: 7px;
+	color: #4386e3;
+	font-size: 20px;
+}
+
+.form-error {
+	color: red;
+}
+
+.form-data {
+	padding: 10px;
+}
+
+.col {
+	float: left;
+	width: 50%;
+	margin-bottom: 15px;
+	margin-top: 1px;
+}
+
+.btn {
+	width: 100%;
+}
+
+.btn-login {
+	font-size: 20px;
+	width: 50%;
+	padding-right: 56px;
+	float: left;
+	margin-top: 1px;
+	padding-left: 40px;
+}
+
+.txt-username {
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.txt-password {
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.btn-login-style {
+	font-size: 17px;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	text-transform: capitalize;
+}
+
+.btn-reset {
+	font-size: 20px;
+	width: 50%;
+	padding-left: 131px;
+	padding-right: 1px;
+	float: left;
+	margin-top: 1px;
+}
+
+.btn-reset-style {
+	font-size: 17px;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	text-transform: capitalize;
+}
+
+.row {
+	padding: 5px;
+	margin: 3px;
+}
