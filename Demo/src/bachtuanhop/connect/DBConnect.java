@@ -13,10 +13,10 @@ public class DBConnect {
 
 	public static Connection getConnection() {
 		try {
-			Class.forName(resourceBundle.getString(Constant.DRIVER));
-			String url = resourceBundle.getString(Constant.URL);
-			String user = resourceBundle.getString(Constant.USERDB);
-			String password = resourceBundle.getString(Constant.PASSWORDDB);
+			Class.forName(resourceBundle.getString(Constant.DRIVER_DB));
+			String url = resourceBundle.getString(Constant.URL_DB);
+			String user = resourceBundle.getString(Constant.USER_DB);
+			String password = resourceBundle.getString(Constant.PASSWORD_DB);
 			return DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException | SQLException e) {
 			return null;

@@ -12,7 +12,7 @@ import bachtuanhop.actionForm.Customer;
 import bachtuanhop.actionForm.T002ActionForm;
 import bachtuanhop.constant.Constant;
 import bachtuanhop.dao.T002DAO;
-import bachtuanhop.entity.CustomerEntity;
+import bachtuanhop.entity.T002Entity;
 
 public class T002Logic {
 	T002DAO t002Dao = new T002DAO();
@@ -20,14 +20,19 @@ public class T002Logic {
 	public T002ActionForm viewAll(int page) {
 
 		int offset = (page - 1) * Constant.LIMIT;
-		List<CustomerEntity> dtos = t002Dao.viewPage(offset, Constant.LIMIT);
+		List<T002Entity> dtos = t002Dao.viewPage(offset, Constant.LIMIT);
 		T002ActionForm actionForm = new T002ActionForm();
 		actionForm.setListCustomer(new LinkedList<Customer>());
 
-		for (CustomerEntity customerDTO : dtos) {
-			Customer customers = new Customer(String.valueOf(customerDTO.getId()), customerDTO.getName(),
-					customerDTO.getSex(), customerDTO.getBirthDay(), customerDTO.getAddress());
-			actionForm.getListCustomer().add(customers);
+		for (T002Entity customerEntity : dtos) {
+			customerEntity.setId(customerEntity.getId());
+			customerEntity.setName(customerEntity.getName());
+			customerEntity.setSex(customerEntity.getSex());
+			customerEntity.setBirthDay(customerEntity.getBirthDay());
+			customerEntity.setAddress(customerEntity.getAddress());
+//			Customer customers = new Customer(String.valueOf(customerDTO.getId()), customerDTO.getName(),
+//					customerDTO.getSex(), customerDTO.getBirthDay(), customerDTO.getAddress());
+//			actionForm.getListCustomer().add(customerEntity);
 		}
 
 		return actionForm;
@@ -44,11 +49,11 @@ public class T002Logic {
 
 	}
 
-	public void insert(CustomerEntity customer) {
+	public void insert(T002Entity customer) {
 		t002Dao.insert(customer);
 	}
 
-	public void update(CustomerEntity customer) {
+	public void update(T002Entity customer) {
 		t002Dao.update(customer);
 	}
 
@@ -75,7 +80,7 @@ public class T002Logic {
 	public T002ActionForm find(String userName, String sex, String birthDayFrom, String birthDayTo, int page) {
 
 		int offset = (page - 1) * Constant.LIMIT;
-		List<CustomerEntity> dtos = t002Dao.viewPage(offset, Constant.LIMIT);
+		List<T002Entity> dtos = t002Dao.viewPage(offset, Constant.LIMIT);
 		T002ActionForm actionForm = new T002ActionForm();
 		actionForm.setListCustomer(new LinkedList<Customer>());
 
@@ -90,10 +95,10 @@ public class T002Logic {
 			dayTo = stringToDate(birthDayTo);
 		} else
 			dayTo = stringToDate(getCurrentTimeStamp());
-		for (CustomerEntity customerDTO : dtos) {
-			Customer customers = new Customer(String.valueOf(customerDTO.getId()), customerDTO.getName(),
-					customerDTO.getSex(), customerDTO.getBirthDay(), customerDTO.getAddress());
-			actionForm.getListCustomer().add(customers);
+		for (T002Entity customerDTO : dtos) {
+//			Customer customers = new Customer(String.valueOf(customerDTO.getId()), customerDTO.getName(),
+//					customerDTO.getSex(), customerDTO.getBirthDay(), customerDTO.getAddress());
+//			actionForm.getListCustomer().add(customers);
 		}
 
 		return actionForm;

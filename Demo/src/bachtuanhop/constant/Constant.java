@@ -3,10 +3,10 @@ package bachtuanhop.constant;
 public class Constant {
 	// DB
 	public static final String DB = "bachtuanhop/applicationResource/DB";
-	public static final String DRIVER = "driverName";
-	public static final String URL = "url";
-	public static final String USERDB = "user";
-	public static final String PASSWORDDB = "password";
+	public static final String DRIVER_DB = "driverName";
+	public static final String URL_DB = "url";
+	public static final String USER_DB = "user";
+	public static final String PASSWORD_DB = "password";
 	//
 	public static final String SUCCESS = "success";
 	public static final String FAIL = "failure";

@@ -14,25 +14,8 @@ public class T002ActionForm extends ActionForm {
 	private String birthDayTo;
 	private String email;
 	private String action;
-	private int page;
-	private List<Customer> listCustomer;
-
-	public T002ActionForm() {
-		this.listCustomer = new ArrayList<Customer>();
-		this.page = 1;
-	}
-
-	public T002ActionForm(String userName, String customerName, String sex, String birthDayFrom, String birthDayTo,
-			String action, List<Customer> listCustomer) {
-		super();
-		this.userName = userName;
-		this.customerName = customerName;
-		this.sex = sex;
-		this.birthDayFrom = birthDayFrom;
-		this.birthDayTo = birthDayTo;
-		this.action = action;
-		this.listCustomer = listCustomer;
-	}
+	private int page =1;
+	private List<Customer> listCustomer=new ArrayList<Customer>();
 
 	public String getUserName() {
 		return userName;

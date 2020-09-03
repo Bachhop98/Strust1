@@ -6,16 +6,6 @@ public class Customer {
 	private String sex;
 	private String birthDay;
 	private String address;
-	public Customer() {}
-	public Customer(String id, String name, String sex, String birthDay, String address) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.sex = sex;
-		this.birthDay = birthDay;
-		this.address = address;
-	}
-	
 	public String getId() {
 		return id;
 	}

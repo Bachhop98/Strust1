@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import bachtuanhop.connect.DBConnect;
+import bachtuanhop.connect.EntityManagerFactory;
 
 public class T001DAO {
 
@@ -16,7 +17,7 @@ public class T001DAO {
 		String sql = "EXEC checkUserPassword ?, ?";
 		int count = 0;
 		try {
-			connection = DBConnect.getConnection();
+			connection = EntityManagerFactory.getInstance().getConnection();
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, userId);
 			statement.setString(2, password);
